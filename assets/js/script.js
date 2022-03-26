@@ -9,8 +9,10 @@ var infoBox = document.querySelector(".info-box");
 var exitBtn = document.querySelector(".quit");
 var continueBtn = document.querySelector(".restart");
 var quizBox = document.querySelector(".quiz-box");
+
 //Can't find where this might be ?
 var endBox = document.querySelector("#quiz-end");
+
 var submitBtn = document.querySelector("#save-score");
 var initialsText = document.querySelector("#initials");
 var existing = localStorage.getItem("results");

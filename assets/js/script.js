@@ -48,6 +48,7 @@ startBtn.onClick = () => {
     showQuestions(queCount)
 };
 
+
 //Get Questions and Options from Array
 function showQuestions(index){
     if (queCount>=10){
@@ -91,6 +92,7 @@ function optionSelected(answer){
         counter -= 5
     }
 }
+
 function nextQuestion(){
     queCount++;
     if(queCount == 10){
@@ -110,6 +112,8 @@ function quizEnd(){
     let scoreTag = '<h3 class="score"> Your score was '+ score +' out of 10!</h3>';
     scoreText.innerHTML = scoreTag; 
 }
+
+
 //Submit Initials
 submitBtn.onclick = () => {
     let initials = initialsText.value;

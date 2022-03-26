@@ -8,9 +8,57 @@
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
 </head>
 <body>
-    
+    <header>
+        <div class="title">
+            Coding Quiz Game!
+            <a href="highscores.html" class="highscores">View Highscores</a>
+        </div>
+    </header>
 
+    <main class="container">
+        <div id="start">
+            <h1>Coding Quiz Game!</h1>
+            <button type="button" class="btn" id="btn-start">Start Game!</button>
+        </div>
+        <div id="rules">
+            <div class="info-title">
+                Coding Quiz Rules
+            </div>
+            <div>
+                You only have <span>60 seconds</span> to finish 10 questions.
+                <br>
+                You cannot go back to a previous questions.
+                <br>
+                If you answer a questions incorrectly, you are penalized by subtracted time.
+            </div>
+        </div>
+        <section id="questions">
+            <div id="time-remaining">
+                <span>Time Left: 60</span>
+            </div>
+            <h1 class="que-text">
+                <Span></Span>
+            </h1>
+            <div id="choices">
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+                <div class="option"><span></span></div>
+            </div>
+            <div id="response">
+                <span></span>
+            </div>
+        </section>
+        <div>
+            <div>End of Quiz!</div>
+            <h3 class="score"></h3>
+            <h2>Enter Initials:</h2>
+            <input type="text" id="initials">
+            <button id="save-score">Submit</button>
+        </div>
+    </main>
 
-    <script src="./assets/js/script.js"></script>
+<script src="./assets/js/questions.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>

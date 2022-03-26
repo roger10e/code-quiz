@@ -16,7 +16,7 @@
     </header>
 
     <main class="container">
-        <div id="start">
+        <div id="start hide">
             <h1>Coding Quiz Game!</h1>
             <button type="button" class="btn" id="btn-start">Start Game!</button>
         </div>
@@ -24,16 +24,20 @@
             <div class="info-title">
                 Coding Quiz Rules
             </div>
-            <div>
+            <div class="info-list">
                 You only have <span>60 seconds</span> to finish 10 questions.
                 <br>
                 You cannot go back to a previous questions.
                 <br>
                 If you answer a questions incorrectly, you are penalized by subtracted time.
             </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
         </div>
-        <section id="questions">
-            <div id="time-remaining">
+        <section id="questions" class="hide quiz-box row mt-5">
+            <div id="time-rem">
                 <span>Time Left: 60</span>
             </div>
             <h1 class="que-text">

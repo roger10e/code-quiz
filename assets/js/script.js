@@ -1,57 +1,68 @@
+//I found this codebase online and thought it would be a good place to start...
+
 //Should I just re-do it all myself? How would you recommend I start then?
-//Should I connect to Bootstrap? Can you show me how to do it properly?
-//"Cannot set properties of null (setting onClick)" ?
+
+console.log("We're connected!");
 
 //Get elements
 var startScreen = document.querySelector("#start");
 var startBtn = document.querySelector("#start-btn");
 var infoBox = document.querySelector(".info-box");
 var exitBtn = document.querySelector(".quit");
-var continueBtn = document.querySelector(".restart");
+
+var continueBtn = document.getElementById("restart");
+
 var quizBox = document.querySelector(".quiz-box");
-
-//Can't find where this might be ?
 var endBox = document.querySelector("#quiz-end");
-
 var submitBtn = document.querySelector("#save-score");
 var initialsText = document.querySelector("#initials");
 var existing = localStorage.getItem("results");
 
-//What is going on here ?
-existing = existing ? existing.split(',') : [];
+//Taking the results from local storage
+if (existing) {
+    existing = existing.split(",");
+} else {
+    existing = [];
+};
 
 var queCount = 0;
-var counter = 60;
 var score = 0;
 
+let counter = 60;
+
 //When Continue button is clicked, hide the information ?
-continueBtn.onClick = () => {
+
+continueBtn.onclick = function() {
+    console.log("button is clicked");
+    //is "hide" class just applicable with this bootstrap set-up?
     infoBox.classList.add("hide");
     startScreen.classList.remove("hide");
 };
 
 //When start button is clicked, do what ?
-startBtn.onClick = () => {
+startBtn.onclick = function() {
     function countdown() {
-        //What does this do ?
+        console.log(counter);
         counter--;
-            if (counter=0) {
-                clearInterval(startCountdown)
-                quizEnd()
-            };
-    var timeRem = document.querySelector("#time-rem");
-    var timeTag = "<span>Time Left: " + counter + "</span>";
-    timeRem.innerHTML = timeTag;
+        // if (counter = 0) {
+        //     clearInterval(startCountdown);
+        //     quizEnd();
+        // };
+        var timeRem = document.querySelector("#time-rem");
+        var timeTag = "<span>Time Left: " + counter + "</span>";
+        timeRem.innerHTML = timeTag;
     };
-
+    
     var startCountdown = setInterval(countdown,1000);
     startScreen.classList.add("hide");
     quizBox.classList.remove("hide");
     showQuestions(queCount)
 };
 
+//Don't really get what's going on down here
 
 //Get Questions and Options from Array
+//Can you go over what this is supposed to do, and why it might not be working ?
 function showQuestions(index){
     if (queCount>=10){
         return;
@@ -66,13 +77,16 @@ function showQuestions(index){
     queText.innerHTML = queTag;
     optionList.innerHTML = optionTag;
     const option = optionList.querySelectorAll(".option");
+    
     for (let i = 0; i < option.length; i++) {
         option[i].setAttribute("onclick", "optionSelected(this)");
     }
+
 };
 
 
 //Show Next Question When Question is answered
+//
 function optionSelected(answer){
     if (queCount>=10){
         return;
@@ -117,7 +131,7 @@ function quizEnd(){
 
 
 //Submit Initials
-submitBtn.onclick = () => {
+submitBtn.onclick = function() {
     let initials = initialsText.value;
     //Store Initials and Score in Local Storage
     var resultsDataObj = {

@@ -2,79 +2,79 @@
 let questions = [
     {
         numb: 1,
-        question: "JavaScript is which type of language?",
-        answer: "Object-Based",
+        question: "What is Atwood's Law?",
+        answer: "'Any application that can be written in Javascript will eventually be written in Javascript.'",
         options: [
-            "Object-Oriented",
-            "Object-Based",
-            "Assembly-language",
-            "High-level"
+            "'Any application that can be written in Javascript will eventually be written in Javascript.'",
+            "'Anything that can go wrong in programming will go wrong'",
+            "'Javascript is eight steps sideways, one step forward'",
+            "'The worst Javascript is better than the best of the rest'"
         ]
     },
     {
         numb: 2,
-        question: "When interpreter encounters an empty statement, what will it do?",
-        answer: "Ignore the statement",
+        question: "What is syntax?",
+        answer: "Proper arrangement of words within the rules of a programming language",
         options: [
-            "Show a warning",
-            "Prompt to complete the statement",
-            "Throw an error",
-            "Ignore the statement",
+            "An object-based programming language based on events and functions",
+            "The meaning of the code as interpreted by the browser",
+            "Proper arrangement of words within the rules of a programming language",
+            "When you don't do your taxes",
         ]
     },
     {
         numb: 3,
-        question: "JavaScript is interpreted by _________",
-        answer: "Client",
+        question: "What does JavaScript do for a website?",
+        answer: "Functionality/Interactivity",
         options: [
-            "Client",
-            "Server",
-            "Object",
+            "Tells the browser how to read the HTML structure",
+            "Does styling that can't be achieved in CSS",
+            "Functionality/Interactivity",
             "None of the above",
         ]
     },
     {
         numb: 4,
-        question: "Which of the following is not a valid JavaScript variable name?",
-        answer: "2names",
+        question: "Which of the following can you do with a for loop?",
+        answer: "Process arrays",
         options: [
-            "2names",
-            "_first_and_last_names",
-            "FirstAndLast",
+            "Tell the browser how to interpret the HTML",
+            "Process arrays",
+            "Pair with a while loop to create a meta-matrix grid structure",
             "None of the above",
         ]
     },
     {
         numb: 5,
-        question : "The _______ method of an Array object adds and/or removes elements from an array.",
-        answer: "Slice",
+        question : "Which of the following are the building blocks of Javascript applications?",
+        answer: "Objects",
         options: [
-            "Reverse",
-            "Shift",
-            "Slice",
-            "Splice",
+            "For loops",
+            "While loops",
+            "Console.log",
+            "Objects",
         ]
     },
     {
         numb: 6,
-        question : "Using _______ statement is how you test for a specific condition.",
-        answer: "If",
+        question : "Which of the following cannot be used to declare a variable?",
+        answer: "Set",
         options: [
-            "Select",
-            "If",
-            "Switch",
-            "For",
+            "Let",
+            "Const",
+            "Set",
+            "Var",
         ]
     },
     {
         numb: 7,
-        question : "Which of the following is not considered a JavaScript operator?",
-        answer: "delete",
+        question : "Which of the following is not a way to introduce commands to be executed?",
+        answer: "Function Introduction",
         options: [
-            "new",
-            "this",
-            "delete",
-            "typeof",
+            "Function Declaration",
+            "Function Introduction",
+            "Function Expression",
+            "None of the Above",
         ]
     },
     {
@@ -90,24 +90,24 @@ let questions = [
     },
     {
         numb: 9,
-        question : "Which of the following type of variable is visible only within a function where it is defined?",
-        answer: "local variable",
+        question : "Which of the following is not a Javascript data type??",
+        answer: "Decimal",
         options: [
-            "global variable",
-            "local variable",
-            "Both of the above.",
-            "None of the above.",
+            "Boolean",
+            "Number",
+            "BigInt",
+            "Decimal",
         ]
     },
     {
         numb: 10,
-        question : "Which of the following is the correct syntax to redirect a url using JavaScript?",
-        answer: "window.location='http://www.newlocation.com';",
+        question : "How do you connect your HTML file to your Javascript file?",
+        answer: "With a script tag",
         options: [
-            "document.location='http://www.newlocation.com';",
-            "browser.location='http://www.newlocation.com';",
-            "navigator.location='http://www.newlocation.com';",
-            "window.location='http://www.newlocation.com';",
+            "With a link tag",
+            "With a source tag",
+            "With a script tag",
+            "With a connect tag",
         ]
     }
 ];

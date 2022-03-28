@@ -4,24 +4,27 @@
     --offWHite: #fff;
     --white: #ffffff;
 }
+
 *{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Literata', Arial, Helvetica, sans-serif; 
 }
+
 body{
-    background: linen;
+    background: rgb(185, 224, 236);
 }
 
 .hide{
     display: none;
 }
+
 .start{
     display: block;
 }
 
 .title{
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(104, 207, 164);
 }
 
 .info-box{
@@ -29,9 +32,10 @@ body{
     background: var(--offWHite);
     border-radius: 5px;
 }
+
 .info-box .info-title {
     height: 60px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(79, 216, 205);
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -40,16 +44,19 @@ body{
     text-align: center;
     justify-content: center;
 }
+
 .info-box .info-list{
     padding: 15px 35px;
 }
+
 .info-box .info-list .info{
     margin: 5px 0;
     font-size: 17px;
 }
+
 .info-box .info-list .info span{
     font-weight: 600;
-    color: lightskyblue;   
+    color: rgb(27, 65, 88);   
 }
 
 .quiz-box{
@@ -57,12 +64,15 @@ body{
     background: var(--offWHite);
     border-radius: 5px;
 }
+
 .que-text{
     border-top: 1px solid lightgray;
 }
+
 #timeRem{
     margin-top: 5;
 }
+
 #start-btn{
     width: 50%;
     background-color: var(--BLUE);
@@ -72,17 +82,19 @@ body{
     letter-spacing: 2px;
     border-radius: 10px;
 }
+
 #start-btn:hover{
     background: var(--blue);
     color: var(--white);
 }
+
 .info-box .buttons{
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: o 35px;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid rgb(119, 238, 172);
 } 
 .info-box .buttons button{
     margin: 0 5px;
@@ -115,7 +127,7 @@ body{
     color: var(--white);
 }
 .question {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(141, 64, 64);
 }
 .option {
     border: solid var(--blue);
@@ -136,7 +148,7 @@ body{
     display: flex;
     align-items: center;
     padding: o 35px;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid rgb(155, 92, 92);
 }
 #saveScore{
     border-color: var(--BLUE);
@@ -152,6 +164,6 @@ body{
     justify-content: center;
 }
 .buttons a {
-        color: blue;
+        color: rgb(82, 152, 231);
         text-decoration: none; /* no underline */
 }

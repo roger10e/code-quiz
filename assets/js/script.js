@@ -148,7 +148,8 @@ function quizEnd(){
 
 //Submit Initials
 submitBtn.onclick = function() {
-    let initials = initialsText.value;
+    //get the value from the input
+    var initials = initialsText.value;
     //Store Initials and Score in Local Storage
     var resultsDataObj = {
         initials: initials,
